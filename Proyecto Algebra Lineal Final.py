@@ -37,7 +37,7 @@ class Ventana(Frame):
             "**Advertencia:** Este programa no reemplaza una consulta médica profesional."
         )
 
-        Label(frame_inicio, text="Diagnóstico de Insuficiencia Renal Crónica", font=("Comic Sans ", 16, "bold"), bg="#f5f5f5").pack(pady=10)
+        Label(frame_inicio, text="Diagnóstico de Insuficiencia Renal Crónica", font=("Comic Sans ", 16, "bold"),fg="#088A68", bg="#f5f5f5").pack(pady=10)
         Label(frame_inicio, text=texto_largo, font=("Comic Sans ", 12), bg="#f5f5f5", wraplength=600, justify="left").pack(pady=20)
 
         Button(frame_inicio, text="Iniciar programa", font=("Comic Sans ", 14), command=self.cargar_riesgos, bg="#007BFF", fg="white", relief=RAISED, padx=10, pady=5).pack(pady=20)
@@ -63,7 +63,7 @@ class Ventana(Frame):
         ]
 
         for i, texto in enumerate(self.opciones_texto):
-            Checkbutton(opciones_frame, text=texto, variable=self.opciones_riesgos[i], bg="#f5f5f5", anchor="w", justify="left").grid(row=i // 2, column=i % 2, padx=5, pady=2, sticky=W)
+            Checkbutton(opciones_frame, text=texto, variable=self.opciones_riesgos[i], bg="#f5f5f5", anchor="w", justify="left", selectcolor="#A9F5F2").grid(row=i // 2, column=i % 2, padx=5, pady=2, sticky=W)
 
         boton_frame = Frame(frame_riesgos, bg="#f5f5f5")
         boton_frame.pack(pady=10)
@@ -98,7 +98,7 @@ class Ventana(Frame):
         ]
 
         for i, texto in enumerate(self.sintomas_texto):
-            Checkbutton(frame_sintomas, text=texto, variable=self.opciones_sintomas[i],command=self.verificar_seleccion_sintomas, bg="#f5f5f5", anchor="w").pack(anchor=W, padx=20)
+            Checkbutton(frame_sintomas, text=texto, variable=self.opciones_sintomas[i],command=self.verificar_seleccion_sintomas, bg="#f5f5f5", anchor="w", selectcolor="#A9F5F2").pack(anchor=W, padx=20)
 
         boton_frame = Frame(frame_sintomas, bg="#f5f5f5")
         boton_frame.pack(pady=10)
