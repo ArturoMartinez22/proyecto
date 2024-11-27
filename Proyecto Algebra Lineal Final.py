@@ -89,8 +89,8 @@ class Ventana(Frame):
             opcion.trace("w", on_change)
 
     def cargar_sintomas(self):
-        frame_sintomas = Frame(self.root, bg="#f5f5f5")
-        Label(frame_sintomas, text="Seleccione los síntomas:", font=("Comic Sans ", 14, "bold"), bg="#f5f5f5").pack(pady=10)
+        frame_sintomas = Frame(self.root, bg="#D8F6CE")
+        Label(frame_sintomas, text="Seleccione los síntomas:", font=("Comic Sans ", 18, "bold"),fg="#0A2A29", bg="#D8F6CE").pack(pady=10)
 
         self.opciones_sintomas = [IntVar() for _ in range(7)]
         self.sintomas_texto = [
@@ -100,9 +100,9 @@ class Ventana(Frame):
         ]
 
         for i, texto in enumerate(self.sintomas_texto):
-            Checkbutton(frame_sintomas, text=texto, variable=self.opciones_sintomas[i],command=self.verificar_seleccion_sintomas, bg="#f5f5f5", anchor="w").pack(anchor=W, padx=20)
+            Checkbutton(frame_sintomas, text=texto, variable=self.opciones_sintomas[i],command=self.verificar_seleccion_sintomas, bg="#D8F6CE", anchor="w").pack(anchor=W, padx=20)
 
-        boton_frame = Frame(frame_sintomas, bg="#f5f5f5")
+        boton_frame = Frame(frame_sintomas, bg="#D8F6CE")
         boton_frame.pack(pady=10)
 
         self.boton_diagnostico = Button(boton_frame, text="Diagnóstico", state=DISABLED, command=self.abrir_ventana_secundaria, bg="#28a745", fg="white", padx=10, pady=5)
