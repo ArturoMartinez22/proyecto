@@ -47,8 +47,8 @@ class Ventana(Frame):
         self.cambiar_frame(frame_inicio)
 
     def cargar_riesgos(self):
-        frame_riesgos = Frame(self.root, bg="##E0F8E6")
-        Label(frame_riesgos, text="Seleccione las opciones de riesgo:", font=("Comic Sans ", 14, "bold"), bg="#E0F8E6").pack(pady=10)
+        frame_riesgos = Frame(self.root, bg="#CEECF5")
+        Label(frame_riesgos, text="Seleccione las opciones de riesgo:", font=("Comic Sans ", 14, "bold"), bg="#CEECF5").pack(pady=10)
 
         opciones_frame = Frame(frame_riesgos, bg="#f5f5f5")
         opciones_frame.pack()
@@ -65,7 +65,7 @@ class Ventana(Frame):
         ]
 
         for i, texto in enumerate(self.opciones_texto):
-            Checkbutton(opciones_frame, text=texto, variable=self.opciones_riesgos[i], bg="#f5f5f5", anchor="w", justify="left").grid(row=i // 2, column=i % 2, padx=5, pady=2, sticky=W)
+            Checkbutton(opciones_frame, text=texto, variable=self.opciones_riesgos[i], bg="#CEECF5", anchor="w", justify="left").grid(row=i // 2, column=i % 2, padx=5, pady=2, sticky=W)
 
         boton_frame = Frame(frame_riesgos, bg="#f5f5f5")
         boton_frame.pack(pady=10)
