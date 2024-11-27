@@ -30,7 +30,7 @@ class Ventana(Frame):
         self.frame_actual.pack(fill=BOTH, expand=True, padx=10, pady=10)
 
     def cargar_inicio(self):
-        frame_inicio = Frame(self.root, bg="#f5f5f5")
+        frame_inicio = Frame(self.root, bg="#E0F8E6")
         texto_largo = (
             "Este programa está diseñado para ayudar a personas sin conocimiento "
             "médico o recursos para consultas, a determinar posibles riesgos de insuficiencia renal."
@@ -38,9 +38,9 @@ class Ventana(Frame):
         advertencia=("Este programa no reemplaza una consulta médica profesional.")
 
         Label(frame_inicio, text="Diagnóstico de Insuficiencia Renal Crónica", font=("Comic Sans ", 22, "bold"),fg="#0A2A1B", bg="#f5f5f5").pack(pady=10)
-        Label(frame_inicio, text=texto_largo, font=("Comic Sans ", 12), bg="#f5f5f5", wraplength=600, justify="left").pack(pady=20)
+        Label(frame_inicio, text=texto_largo, font=("Comic Sans ", 12), bg="#E0F8E6", wraplength=600, justify="left").pack(pady=20)
         Label(frame_inicio, text="ADVERTENCIA:", font=("Comic Sans", 15), bg="#F7D358", justify="left").pack(pady=0, padx=5)
-        Label(frame_inicio, text=advertencia, font=("Comic Sans", 12), bg="#f5f5f5").pack(pady=0, padx=5)
+        Label(frame_inicio, text=advertencia, font=("Comic Sans", 12), bg="#E0F8E6").pack(pady=0, padx=5)
 
         Button(frame_inicio, text="Iniciar programa", font=("Comic Sans ", 14), command=self.cargar_riesgos, bg="#088A68", fg="white", relief=RAISED, padx=10, pady=5).pack(pady=20)
 
