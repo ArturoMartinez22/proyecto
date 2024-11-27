@@ -67,7 +67,7 @@ class Ventana(Frame):
         for i, texto in enumerate(self.opciones_texto):
             Checkbutton(opciones_frame, text=texto, variable=self.opciones_riesgos[i], bg="#CEECF5", anchor="w", justify="left").grid(row=i // 2, column=i % 2, padx=5, pady=2, sticky=W)
 
-        boton_frame = Frame(frame_riesgos, bg="#f5f5f5")
+        boton_frame = Frame(frame_riesgos, bg="#CEECF5")
         boton_frame.pack(pady=10)
 
         self.boton_sintomas = Button(boton_frame, text="Siguiente", state=DISABLED, command=self.cargar_sintomas, bg="#28a745", fg="white", padx=10, pady=5)
