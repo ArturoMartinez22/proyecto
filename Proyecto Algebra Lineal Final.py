@@ -73,7 +73,7 @@ class Ventana(Frame):
         self.boton_sintomas = Button(boton_frame, text="Siguiente", state=DISABLED, command=self.cargar_sintomas, bg="#28a745", fg="white", padx=10, pady=5)
         self.boton_sintomas.pack(side=LEFT, padx=5)
 
-        Button(boton_frame, text="Volver", command=self.cargar_inicio, bg="#dc3545", fg="white", padx=10, pady=5).pack(side=LEFT, padx=5)
+        Button(boton_frame, text="Volver", command=self.cargar_inicio, bg="#B4045F", fg="white", padx=10, pady=5).pack(side=LEFT, padx=5)
 
         self.cambiar_frame(frame_riesgos)
         self.verificar_seleccion_riesgos()
