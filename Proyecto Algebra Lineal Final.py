@@ -108,7 +108,7 @@ class Ventana(Frame):
         self.boton_diagnostico = Button(boton_frame, text="Diagnóstico", state=DISABLED, command=self.abrir_ventana_secundaria, bg="#28a745", fg="white", padx=10, pady=5)
         self.boton_diagnostico.pack(side=LEFT, padx=5)
 
-        Button(boton_frame, text="Volver", command=self.cargar_riesgos, bg="#dc3545", fg="white", padx=10, pady=5).pack(side=LEFT, padx=5)
+        Button(boton_frame, text="Volver", command=self.cargar_riesgos, bg="#B4045F", fg="white", padx=10, pady=5).pack(side=LEFT, padx=5)
 
         self.cambiar_frame(frame_sintomas)
 
