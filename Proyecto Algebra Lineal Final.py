@@ -47,8 +47,8 @@ class Ventana(Frame):
         self.cambiar_frame(frame_inicio)
 
     def cargar_riesgos(self):
-        frame_riesgos = Frame(self.root, bg="#f5f5f5")
-        Label(frame_riesgos, text="Seleccione las opciones de riesgo:", font=("Comic Sans ", 14, "bold"), bg="#f5f5f5").pack(pady=10)
+        frame_riesgos = Frame(self.root, bg="##E0F8E6")
+        Label(frame_riesgos, text="Seleccione las opciones de riesgo:", font=("Comic Sans ", 14, "bold"), bg="#E0F8E6").pack(pady=10)
 
         opciones_frame = Frame(frame_riesgos, bg="#f5f5f5")
         opciones_frame.pack()
