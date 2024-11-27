@@ -37,12 +37,12 @@ class Ventana(Frame):
         )
         advertencia=("Este programa no reemplaza una consulta médica profesional.")
 
-        Label(frame_inicio, text="Diagnóstico de Insuficiencia Renal Crónica", font=("Comic Sans ", 22, "bold"), bg="#f5f5f5").pack(pady=10)
+        Label(frame_inicio, text="Diagnóstico de Insuficiencia Renal Crónica", font=("Comic Sans ", 22, "bold"),fg="#0A2A1B", bg="#f5f5f5").pack(pady=10)
         Label(frame_inicio, text=texto_largo, font=("Comic Sans ", 12), bg="#f5f5f5", wraplength=600, justify="left").pack(pady=20)
         Label(frame_inicio, text="ADVERTENCIA:", font=("Comic Sans", 15), bg="#F7D358", justify="left").pack(pady=0, padx=5)
         Label(frame_inicio, text=advertencia, font=("Comic Sans", 12), bg="#f5f5f5").pack(pady=0, padx=5)
 
-        Button(frame_inicio, text="Iniciar programa", font=("Comic Sans ", 14), command=self.cargar_riesgos, bg="#007BFF", fg="white", relief=RAISED, padx=10, pady=5).pack(pady=20)
+        Button(frame_inicio, text="Iniciar programa", font=("Comic Sans ", 14), command=self.cargar_riesgos, bg="#088A68", fg="white", relief=RAISED, padx=10, pady=5).pack(pady=20)
 
         self.cambiar_frame(frame_inicio)
 
