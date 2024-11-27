@@ -50,7 +50,7 @@ class Ventana(Frame):
         frame_riesgos = Frame(self.root, bg="#CEECF5")
         Label(frame_riesgos, text="Seleccione las opciones de riesgo:", font=("Comic Sans ", 14, "bold"), bg="#CEECF5").pack(pady=10)
 
-        opciones_frame = Frame(frame_riesgos, bg="#f5f5f5")
+        opciones_frame = Frame(frame_riesgos, bg="#CEECF5")
         opciones_frame.pack()
 
         self.opciones_riesgos = [IntVar() for _ in range(17)]
